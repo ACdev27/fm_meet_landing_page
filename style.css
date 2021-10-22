@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
+
+:root {
+  --font-primary: 'Red Hat Display', sans-serif; /* weigths 900 500  */
+  --color-teal: hsl(192, 37%, 48%);
+  --color-purple: hsl(268, 34%, 53%);
+  --color-sky-blue: hsl(192, 90%, 77%);
+  --color-lavender: hsl(268, 100%, 86%);
+  --color-black: hsl(240, 21%, 20%);
+  --color-gray: hsl(240, 10%, 57%);
+
+
+}
+
+*, *::before, *::after { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: var(--font-primary);
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+}
+header {
+  
+}
+.container {
+  max-width: 1440px;
+  margin: 0px auto;
+}
+h1 {
+  font-size: 6.4rem;
+  font-weight: 900;
+  line-height: 6.4rem;
+  color: var(--color-black);
+}
+h2 {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 4.4rem;
+}
+
+
+.logo {
+  margin-top: 80px;
+  margin-bottom: 61px;
+  text-align: center;
+}
+
+
+.introduction {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.introduction__image-1 img, .introduction__image-2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.introduction__image-1 {
+  flex-basis: 30%;
+  margin-left: -32px;
+}
+.introduction__image-2 {
+  flex-basis: 30%;
+  margin-right: -32px;
+  text-align: right;
+}
+
+.introduction__text {
+  flex-basis: 39%;
+  text-align: center;
+  margin: 0px 68px;
+}
+
+/* .introduction__text h1 {
+  padding: 0px 80px;
+} */
+
+.introduction__text p {
+  font-size: 1.8rem;
+  color: var(--color-gray);
+}
+
+.introduction__buttons {
+  margin-top: 32px;
+}
+
+.btn {
+  font-size: 1.6rem;
+  font-weight: 900;
+  border: none;
+  outline: none;
+  padding: 19px 34px;
+  border-radius: 29px;
+
+  cursor: pointer;
+
+}
+.btn-primary {
+  color: white;
+  background-color: var(--color-teal);
+}
+.btn-primary span {
+  color: var(--color-sky-blue);
+}
+.btn-secondary {
+  color: white;
+  background-color: var(--color-purple);
+}
+.introduction__buttons .download-button {
+  margin-right: 15px;
+}
+
+
+.features {
+
+}
+.features__number {
+  border: 1px solid red;
+}
+.features__badge {
+  width: 56px;
+  height: 56px;
+  border: 1px solid var(--color-gray);
+}
+
+.features__photos {
+  
+  border: 1px solid green;
+}
+.features__text {
+  border: 1px solid blue;
+
+}
