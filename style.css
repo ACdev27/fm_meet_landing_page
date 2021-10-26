@@ -29,6 +29,9 @@ body {
   font-weight: 500;
   line-height: 2.6rem;
 }
+main {
+  padding-bottom: 300px;
+}
 header {
   
 }
@@ -87,7 +90,8 @@ h2 {
   padding: 0px 80px;
 } */
 
-.introduction__text p {
+.introduction__paragraph {
+  margin-top: 34px;
   font-size: 1.8rem;
   color: var(--color-gray);
 }
@@ -107,39 +111,90 @@ h2 {
   cursor: pointer;
 
 }
-.btn-primary {
+.btn--primary {
   color: white;
   background-color: var(--color-teal);
 }
-.btn-primary span {
+.btn--primary span {
   color: var(--color-sky-blue);
 }
-.btn-secondary {
+.btn--secondary {
   color: white;
   background-color: var(--color-purple);
 }
-.introduction__buttons .download-button {
+.btn__download {
   margin-right: 15px;
 }
 
 
-.features {
-
+.section__line {
+  width: 56px;
+  height: 84px;
+  border-left: 1px solid var(--color-gray);
+  transform: translateX(50%);
 }
-.features__number {
-  border: 1px solid red;
-}
-.features__badge {
+.section__badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 56px;
   height: 56px;
+  border-radius: 50%;
   border: 1px solid var(--color-gray);
 }
+.section__number {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--color-gray);
+}
 
+.features {
+  margin-top: 110px;
+}
 .features__photos {
-  
-  border: 1px solid green;
+  margin-top: 64px;
+}
+.photo-set {
+  display: flex;
+  gap: 30px
+}
+.photo-set__a, .photo-set__b {
+  display: flex;
+  gap: 30px;
+}
+.photo-set__image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+.features__text-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 80px;
 }
 .features__text {
-  border: 1px solid blue;
-
+  flex-basis: 47%;
+  text-align: center;
+}
+.features__text--sub-head {
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--color-teal);
+}
+.features__text--heading {
+  margin-top: 16px;
+  line-height: 44px;
+}
+.features__text--paragraph {
+  margin-top: 32px;;
+  color: var(--color-gray);
 }
