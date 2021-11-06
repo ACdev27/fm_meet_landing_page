@@ -179,6 +179,7 @@ h2 {
 }
 .photo-set__image {
   width: 100%;
+  max-width: 45%;
   height: auto;
   border-radius: 8px;
 }
