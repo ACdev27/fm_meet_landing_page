@@ -11,6 +11,7 @@
   --color-white: hsl(0, 0%, 98%);
   --color-button-hover-primary: hsl(192, 54%, 64%);
   --color-button-hover-secondary: hsl(267, 64%, 71%);
+  --color-light-gray: rgb(216, 216, 216);
 }
 
 *, *::before, *::after { 
@@ -132,7 +133,7 @@ h2 {
 .section__line {
   width: 56px;
   height: 84px;
-  border-left: 1px solid var(--color-gray);
+  border-left: 1px solid var(--color-light-gray);
   transform: translateX(50%);
 }
 .section__badge {
@@ -143,7 +144,7 @@ h2 {
   height: 56px;
   border-radius: 50%;
   background-color: white;
-  border: 1px solid var(--color-gray);
+  border: 1px solid var(--color-light-gray);
 }
 .section__number-container {
   display: flex;
