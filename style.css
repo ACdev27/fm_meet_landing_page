@@ -19,8 +19,6 @@
   box-sizing: border-box;
 }
 
-
-
 html {
   font-size: 62.5%;
 }
@@ -30,7 +28,6 @@ body {
   font-weight: 500;
   line-height: 2.6rem;
 }
-
 .container {
   max-width: 1440px;
   margin: 0px auto;
@@ -46,15 +43,11 @@ h2 {
   font-weight: 900;
   line-height: 4.4rem;
 }
-
-
 .logo {
   margin-top: 48px;
   margin-bottom: 64px;
   text-align: center;
 }
-
-
 .introduction {
   display: flex;
   flex-direction: row;
@@ -77,8 +70,6 @@ h2 {
   /* margin-right: -32px; */
   text-align: right;
 }
-
-
 .introduction__image-1--desktop {
   max-width: 100%;
   height: auto;
@@ -90,35 +81,25 @@ h2 {
   height: auto;
   margin-left: -27px;
 }
-
 .introduction__image-2 img {
+  max-width: 100%;
+  height: auto;
   position: relative;
   left: 38px;
 }
-
-
-
-
 .introduction__text {
   flex-basis: 39%;
   text-align: center;
   margin: 67px 68px 0px 68px;
 }
-
-/* .introduction__text h1 {
-  padding: 0px 80px;
-} */
-
 .introduction__paragraph {
   margin-top: 34px;
   font-size: 1.8rem;
   color: var(--color-gray);
 }
-
 .introduction__buttons {
   margin-top: 32px;
 }
-
 .btn {
   font-size: 1.6rem;
   font-weight: 900;
@@ -138,21 +119,16 @@ h2 {
 .btn--primary:hover {
   background-color: var(--color-button-hover-primary);
 }
-
 .btn--secondary {
   color: white;
   background-color: var(--color-purple);
-  padding: 19px 27px;
 }
 .btn--secondary:hover {
   background-color: var(--color-button-hover-secondary);
 }
 .btn__download {
-  margin-right: 15px;
-  margin-bottom: 20px;
+  margin: 0px 15px 20px 15px
 }
-
-
 .section__line {
   width: 56px;
   height: 84px;
@@ -178,15 +154,11 @@ h2 {
   margin-bottom: -28px;
   align-items: center;
 }
-
 .section__number {
   font-size: 1.6rem;
   font-weight: 900;
   color: var(--color-gray);
 }
-
-
-
 .features {
   margin-top: 110px;
 }
@@ -209,8 +181,6 @@ h2 {
   height: auto;
   border-radius: 8px;
 }
-
-
 .features__text-container {
   display: flex;
   flex-direction: row;
@@ -237,18 +207,14 @@ h2 {
   margin-top: 32px;;
   color: var(--color-gray);
 }
-
 footer {
   position: relative;
   margin-top: 72px;
-  margin-bottom: 200px;
 }
 .footer-content__background {
   min-height: 308px;
-  /* background-color: var(--color-teal); */
   background: url(images/desktop/image-footer.jpg) no-repeat center center/cover;
 }
-
 .footer-content__background::before {
   content: '';
   width: 100%;
@@ -268,14 +234,12 @@ footer {
 .footer-content__text div {
   flex-basis: 25%;
 }
-
 .footer-content__text h2 {
   color: var(--color-white);
 }
 .footer-content__text p {
   color: var(--color-white);
 }
-
 .btn--secondary span {
   color: var(--color-lavender);
 }
@@ -313,7 +277,7 @@ footer {
     margin-top: 48px;
   }
   .features__text {
-    flex-basis: 100%;
+    flex-basis: 80%;
     max-width: 573px;
   }
   .features__text--paragraph {
@@ -340,10 +304,8 @@ footer {
   }
   .footer-content__background {
     min-height: 428px;
-    /* background-color: var(--color-teal); */
     background: url(images/tablet/image-footer.jpg) no-repeat center center/cover;
   }
-  
   .footer-content__background::before {
     height: 428px;
   }
@@ -351,21 +313,33 @@ footer {
     height: 428px;
     padding-top: 55px;
   }
-
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 620px) {
+  .introduction__text {
+    margin: 67px 70px 0px 70px;
+  }
+  h1 {
+    font-size: 4.2rem;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 4.4rem;
+    padding: 0;
+  }
+  h2 {
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+  }
   .introduction__image-1--tablet {
     max-width: 111%;
     margin-left: -20px;
   }
   .introduction__text {
     margin: 67px 24px 0px 24px;
-  }
-  .introduction__text h1 {
-    font-size: 4rem;
-    line-height: 4.4rem;
-    padding: 0;
   }
   .introduction__paragraph {
     font-size: 1.6rem;
@@ -382,8 +356,20 @@ footer {
     gap: 25px;
   }
   .features__text-container {
-    margin-top: 65px;
+    margin-top: 64px;
   }
-
-
+  .features__text--heading {
+    margin: 16px 24px 0px 24px;
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+  }
+  .footer-content__text {
+    padding: 0 7%;
+  }
+  .footer-content__text h2 {
+    margin-top: 68px;
+    margin-bottom: 30px;
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+  }
 }
